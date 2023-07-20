@@ -8,7 +8,7 @@
 
 p{
   font-weight: 300;
-  color: black;
+  color: #262526;
 }
 
 /* Header */
@@ -49,25 +49,25 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #f2f2f2;
   text-decoration: none;
   font-weight: 700;
 }
 
 header .navbar li a:hover {
-  color: red;
-  border-bottom: 2px solid red;
+  color: #d92332;
+  border-bottom: 2px solid  #d94350;
 }
 
 /* Script header sticky */
 
 header.sticky{
-  background: white;
+  background: #f2f2f2;
   padding: 10px;
 }
 
 header.sticky .navbar li a{
-  color: red;
+  color: #d92332;
 }
 
 header.sticky .navbar .btn-contact{
@@ -94,18 +94,18 @@ header.sticky .navbar .btn-contact{
 }
 
 .banniere .contenu h2{
-  color: white;
+  color: #f2f2f2;
   font-size: 3em;
   text-transform: capitalize;
 }
 .contenu p:nth-child(2){
-  color: white;
+  color: #f2f2f2;
   font-size: 1em;
 }
 
 .btnreservation{
   font-size: 1em;
-  color: white;
+  color: #f2f2f2;
   background: rgb(0, 140, 255);
   padding: 10px 20px;
   display: inline-block;
@@ -147,7 +147,7 @@ section{
 }
 
 .titre-texte{
-  color: black;
+  color: #262526;
   font-size: 2em;
   font-weight: 300px;
   text-transform: capitalize;
@@ -184,8 +184,8 @@ section{
 .prestations .contenu .box{
   width: 350px;
   margin: 20px;
-  border: 20px solid white;
-  box-shadow: 20px 15px 35px black;
+  border: 20px solid #f2f2f2;
+  box-shadow: 20px 15px 35px #262526;
 }
 
 .prestations .contenu .box .imbox{
@@ -239,7 +239,7 @@ section{
 .avis-clients .contenu .box{
   width: 340px;
   margin: 20px;
-  background-color: white;
+  background-color: #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,7 +275,7 @@ section{
 }
 
 .avis-clients .contenu .box h3{
-  color: red;
+  color: #d92332;
   margin-top: 20px;
   font-size: 1em;
   font-weight: 600;
@@ -297,8 +297,8 @@ section{
 
 .contactform{
   padding: 75px 50px;
-  background: white;
-  box-shadow: 5px 15px 50px black;
+  background: #f2f2f2;
+  box-shadow: 5px 15px 50px #262526;
   max-width: 500px;
   margin-top: 50px;
   justify-content: center;
@@ -313,7 +313,7 @@ section{
 }
 
 .contactform .h3{
-  color: black;
+  color: #262526;
   font-size: 1.2em;
   margin-bottom: 20px;
 }
@@ -321,9 +321,9 @@ section{
 .contactform .inputboite input,
 .contactform .inputboite .textarea{
   width: 100%;
-  border: 1px solid grey;
+  border: 1px solid #d9777f;
   padding: 10px;
-  color: black;
+  color: #262526;
   outline: none;
   font-size: 16px;
   font-weight: 300;
@@ -334,7 +334,7 @@ section{
   font-size: 1em;
   font-weight: 700;
   color: white;
-  background: red;
+  background: #d92332;
   display: inline-block;
   cursor: pointer;
   text-transform: uppercase;
@@ -353,7 +353,7 @@ section{
 footer{
   width: 100%;
   background-color: white;
-  color: black;
+  color: #262526;
 }
 
 .contenu-footer{
@@ -407,7 +407,7 @@ footer{
 
 .liste-medias a{
   text-decoration: none;
-  color: black;
+  color: #262526;
   display: flex;
   align-items: center;
 }
@@ -430,7 +430,7 @@ footer{
 
   header .navbar li a{
     text-decoration: none;
-    color: black;
+    color: #262526;
     font-size: 1.3em;
     font-weight: 300;
   }
@@ -526,7 +526,7 @@ footer{
   }
 
   .titre-texte{
-    color: black;
+    color: #262526;
     font-size: 2rem;
     font-weight: 300;
     text-transform: capitalize;
@@ -576,7 +576,7 @@ footer{
 
   header .navbar li a{
     text-decoration: none;
-    color: black;
+    color: #262526;
     font-size: 1.6em;
     font-weight: 300;
   }
