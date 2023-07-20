@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Garage auto de NAME">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Garage V.Parrot</title>
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header>
+    <div class="logo"></div>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+                <li><a href="#prestations" onclick="toggleMenu();">Services</a></li>
+                <li><a href="#avis-clients" onclick="toggleMenu();">Clientèle</a></li>
+                <li><a href="#">Voitures d'occasion</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Header - JS -->
+
+<script type="text/javascript">
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    }
+</script>
+
+
+<!-- Bannière -->
+
+<section class="banniere" id="banniere">
+    <div class="contenu">
+        <h2 class="titre-texte">Bienvenue chez Garage Automobile</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac justo in dolor gravida posuere vitae nec
+        lectus. Curabitur at urna ac est tincidunt suscipit.</p>
+        <a href="#contact" class="btnreservation">Nous joindre</a>
+    </div>
+</section>
+
+
+<!-- Section à propos  -->
+
+<section class="apropos" id="apropos">
+    <div class="row">
+        <div class="col50">
+            <h2 class="titre-texte">A propos de nous</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a auctor neque. Maecenas tincidunt felis non nibh facilisis pharetra. Suspendisse pretium risus viverra, hendrerit massa ut, facilisis risus. Duis mollis luctus facilisis. Nulla ullamcorper cursus pharetra. Suspendisse sed purus nec lectus ultrices malesuada vitae eget lectus. Mauris a nunc elit.</p>
+        </div>
+        <div class="col50">
+            <div class="img">
+                <img src="Images/diapo2.jpg" alt="Image présentation">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Section prestations proposées -->
+
+<section class="prestations" id="prestations">
+    <div class="titre">
+        <h2 class="titre-texte">Nos prestations</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a auctor neque. Maecenas tincidunt felis non nibh facilisis pharetra.</p>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="Images/c2.jpg" alt="Image prestations">
+            </div>
+            <div class="text">
+                <h3>Réparation carrosserie</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="Images/c2.jpg" alt="Image prestations">
+            </div>
+            <div class="text">
+                <h3>Révision complète</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="Images/c2.jpg" alt="Image prestations">
+            </div>
+            <div class="text">
+                <h3>Réparation mécanique</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="Images/c2.jpg" alt="Image prestations">
+            </div>
+            <div class="text">
+                <h3>Vidange et entretien</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Avis Client-->
+
+<section class="avis-clients" id="avis-clients">
+    <div class="titre">
+        <h2 class="titre-texte">Nos avis clients</h2>
+    </div>
+    <div class="contenu">
+        <div class="box">
+            <div class="imbox">
+                <img src="./Images/clients.png" alt="Avatar">
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a auctor neque. Maecenas tincidunt felis non nibh facilisis pharetra</p>
+                <h3>John Doe</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./Images/clients.png" alt="Avatar">
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a auctor neque. Maecenas tincidunt felis non nibh facilisis pharetra</p>
+                <h3>John Doe</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="imbox">
+                <img src="./Images/clients.png" alt="Avatar">
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a auctor neque. Maecenas tincidunt felis non nibh facilisis pharetra</p>
+                <h3>John Doe</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Formulaire de contact -->
+
+<section class="contact" id="contact">
+    <div class="titre-noir">
+        <h2 class="titre-texte">Contact</h2>
+        <p class="texte-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac eleifend velit.</p>
+    </div>
+    <div class="contactform">
+        <div class="inputboite">
+            <input type="text" id="nom" name="nom" placeholder="Nom">
+        </div>
+        <div class="inputboite">
+            <input type="text" id="prenom" name="prenom" placeholder="Prenom">
+        </div>
+        <div class="inputboite">
+            <input type="text" id="email" name="email" placeholder="Email">
+        </div>
+        <div class="inputboite">
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+        </div>
+        <div class="inputboite">
+            <input type="submit" id="envoyer" name="envoyer" value="Envoyer">
+        </div>
+    </div>
+</section>
+
+
+<!-- Section footer -->
+
+<footer>
+    <div class="contenu-footer">
+        <div class="bloc footer-horaires">
+            <h4>Horaires</h4>
+            <ul class="liste-horaires">
+                <li>Lun 08:30-18:30</li>
+                <li>Mar 08:30-18:30</li>
+                <li>Mer 08:30-18:30</li>
+                <li>Jeu 08:30-18:30</li>
+                <li>Ven 08:30-18:30</li>
+                <li>Sam Fermé</li>
+                <li>Dim Fermé</li>
+            </ul>
+        </div>
+        <div class="bloc footer-contact">
+            <h4>Contactez nous</h4>
+            <p>00-00-00-00-00</p>
+            <p>contact@example.com</p>
+            <p>123 Rue des Coucous, Paris 75009</p>
+        </div>
+        <div class="bloc footer-medias">
+            <h4>Médias</h4>
+            <ul class="liste-medias">
+                <li><a href="#"><img src="./Images/Logo facebook.png" alt="icones réseaux sociaux" class="img-logo">Facebook</a></li>
+                <li><a href="#"><img src="./Images/Logo Insta.png" alt="icones réseaux sociaux" class="img-logo">Instagram</a></li>
+                <li><a href="#"><img src="./Images/Logo Ytube.png" alt="icones réseaux sociaux" class="img-logo">Youtube</a></li>
+            </ul>
+        </div>
+        <div class="bloc-footer-copyright">
+            <p>Garage V.Parrot&copy; 
+            <br> Tous droits réservé</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
